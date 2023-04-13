@@ -1,0 +1,9 @@
+# Function dependencies, for example:
+# package>=version
+-i https://pypi.tuna.tsinghua.edu.cn/simple
+
+lxml
+pandas
+psycopg2-binary
+sqlalchemy
+uuid
