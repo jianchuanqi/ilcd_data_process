@@ -7,6 +7,6 @@ def generate_uuid(num_uuids):
     return uuid_list
 
 # Example usage:
-num_uuids = 2  # Change this number to generate more or fewer UUIDs
+num_uuids = 196  # Change this number to generate more or fewer UUIDs
 uuid_list = generate_uuid(num_uuids)
 print(uuid_list)

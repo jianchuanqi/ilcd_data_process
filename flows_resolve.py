@@ -92,11 +92,6 @@ def parse_xml_flow(xml_string):
     except AttributeError:
         referenceToReferenceFlowProperty = None
 
-    try:
-        flow_property_short_description = root.find(f".//flowProperty[@dataSetInternalID='{referenceToReferenceFlowProperty}']/referenceToFlowPropertyDataSet/common:shortDescription", root.nsmap).text
-    except AttributeError:
-        flow_property_short_description = None
-    
     # 将数据添加到数据列表中
     return ({
     'UUID': uuid,
@@ -116,5 +111,4 @@ def parse_xml_flow(xml_string):
     'Dataset Version': dataset_version,
     'Permanent Dataset URI': permanent_dataset_uri,
     'referenceToReferenceFlowProperty': referenceToReferenceFlowProperty,
-    'Flow Property Short Description': flow_property_short_description,
     })
